@@ -28,19 +28,15 @@ SET_TO_CART(state, data){
 },
 SET_RESUME(state, resume){
     state.cart.resume = resume
+},
+FINALIZE_PURCHASE(state){
+    state.cart.quantity = 0,
+    state.cart.resume = 0
+    state.cart.cartItems = [],
+    state.cart.amount = []
 }
 
 
 }
 
 export default multations
-
-
-
-// SET_TO_CART(state, data){
-//     let items =  state.cart.cartItems
-//     let prices =  state.cart.amount
-//     items.push(data)
-//     prices.push(data.price)
-//     ++state.cart.quantity
-// },

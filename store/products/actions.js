@@ -72,6 +72,10 @@ const actions = {
     commit("SET_TO_CART", data);
     commit("SET_RESUME", resume.toFixed(2));
   },
+  purchase({commit, state}){
+    commit("FINALIZE_PURCHASE")
+  }
+  
 };
 
 export default actions;

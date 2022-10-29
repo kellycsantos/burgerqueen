@@ -27,7 +27,7 @@
             <p>{{ cart.resume }}</p>
           </div>
 
-          <button
+          <button @click="finish"
             class="bg-[#ec483b] text-white text-md h-10 leading-4 rounded-md p-2 lg:self-end mt-4"
           >
             Efetuar pagamento
@@ -48,7 +48,7 @@
   </div>
 </template>
 <script>
-import { mapState } from "vuex";
+import { mapState, mapActions } from "vuex";
 import ButtonQntd from "@/components/QntdButton.vue";
 export default {
   name: "Cart",
@@ -60,11 +60,15 @@ export default {
     ...mapState("products", ["cart"]),
   },
   methods: {
+    ...mapActions('products' ,["purchase"]),
     duplicate(index) {
       if (index == index) {
         ("ja tem esse no carrinho");
       }
     },
+    finish(){
+      this.purchase()
+    }
   },
 };
 </script>
