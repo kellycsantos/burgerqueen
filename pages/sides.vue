@@ -15,8 +15,7 @@ methods:{
 
 },
 mounted(){
-    this.getSide()
+    this.getSide(0)
 }
-
 })
 </script>

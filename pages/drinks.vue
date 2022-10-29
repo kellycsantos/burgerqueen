@@ -15,7 +15,7 @@ methods:{
 
 },
 mounted(){
-    this.getDrink()
+    this.getDrink(0)
 }
 
 })

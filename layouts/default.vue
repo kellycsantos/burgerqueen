@@ -17,6 +17,7 @@ import TopBar from '@/components/TopBar.vue'
 import CardContainer from '@/components/ProductContainer.vue'
 
 export default({
+    name:'LayoutDefault',
     components:{
         Menu,
         TopBar,

@@ -8,13 +8,13 @@ const burgerQueenApi = axios.create({
 const Endpoint = EndpointFactory(burgerQueenApi)
 
 
-
-export const allProducts = new Endpoint("/");
+// http://localhost:4000/drink?page=2
+export const allProducts = new Endpoint(({page}) => `/?page=${page}`);
 export const searchProducts = new Endpoint(({search}) => `/name/${search}`);
-export const drinks = new Endpoint("/drink")
-export const burger = new Endpoint("/burger")
-export const dessert = new Endpoint("/dessert")
-export const side = new Endpoint("/side")
+export const drinks = new Endpoint(({page}) =>`/drink?page=${page}`)
+export const burger = new Endpoint(({page}) => `/burger?page=${page}`)
+export const dessert = new Endpoint(({page}) => `/dessert?page=${page}`)
+export const side = new Endpoint(({page}) => `/side?page=${page}`)
 
 
 

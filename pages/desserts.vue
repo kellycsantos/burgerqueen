@@ -1,9 +1,12 @@
 <template>
-
 </template>
 <script>
    import { mapState, mapActions } from "vuex";
+  //  import Paginate from '@/components/Paginate.vue'
 export default({
+  components:{
+    
+  },
   computed: {
     ...mapState("products", ["items"]),
     products() {
@@ -15,8 +18,7 @@ methods:{
 
 },
 mounted(){
-    this.getDessert()
-    console.log('ola')
+    this.getDessert(0)
 }
 
 })

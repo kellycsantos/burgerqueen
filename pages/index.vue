@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted(){
-    this.getAll()
+    this.getAll(0)
   }
 };
 </script>

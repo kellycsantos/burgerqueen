@@ -11,7 +11,6 @@ export default({
     data(){
         return{
             quantity: 1,
-            teste: 'venha'
         }
     },
     methods:{

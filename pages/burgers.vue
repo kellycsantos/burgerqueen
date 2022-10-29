@@ -15,7 +15,7 @@ methods:{
 
 },
 mounted(){
-    this.getBurger()
+    this.getBurger(0)
 }
 
 })

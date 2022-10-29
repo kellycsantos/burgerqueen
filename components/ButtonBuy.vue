@@ -15,7 +15,6 @@ export default({
     data(){
         return{
             desativado: false,
-            teste: 'botão de adicionar'
         }
     },
     methods:{

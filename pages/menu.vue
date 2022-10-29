@@ -15,7 +15,7 @@ methods:{
 
 },
 mounted(){
-    this.getAll()
+    this.getAll(0)
 }
 
 })
