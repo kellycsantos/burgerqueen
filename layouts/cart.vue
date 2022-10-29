@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="overflow-hidden m-0 p-0 ">
         
-        <NuxtLink to="/"><h1>Voltar a pagina </h1></NuxtLink>
+        <NuxtLink to="/"><div class="flex h-[6vh] px-2 bg-[#ec483b]"><img  class="" src="@/static/icons/back-arrow.png"></div></NuxtLink>
         <NuxtChild/>
     </div>
 </template>

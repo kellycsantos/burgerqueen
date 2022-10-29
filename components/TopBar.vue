@@ -7,12 +7,12 @@
       </button>
     </label>
     <NuxtLink to="/cart">
-    <button class="w-12 h-12 ml-2 flex items-center justify-center border-2">
+    <button class="w-12 h-12 ml-2 flex items-center justify-center border-0">
         
         <div class="relative left-8 top-[-8px] bg-red-500 rounded-full">
             <div class="w-8 text-white">{{cart.quantity}}</div>
         </div>
-      <img src="../static/icons/cart.png" class="border-2 ml-[-32px]" />
+      <img src="../static/icons/cart.png" class=" ml-[-32px]" />
     </button>
 </NuxtLink>
 
