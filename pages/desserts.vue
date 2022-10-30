@@ -2,7 +2,6 @@
 </template>
 <script>
    import { mapState, mapActions } from "vuex";
-  //  import Paginate from '@/components/Paginate.vue'
 export default({
   components:{
     
