@@ -18,7 +18,6 @@
               <P class="text-[#ec483b] text-md"
                 >R${{ item.price.toFixed(2) }}</P
               >
-
               <ButtonQntd />
             </div>
           </div>

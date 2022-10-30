@@ -1,5 +1,4 @@
 export default {
-  user: "kellycdev - arquivo state",
   pagina: 0,
   items: [],
   cart: {

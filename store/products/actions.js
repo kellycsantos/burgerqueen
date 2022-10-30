@@ -72,7 +72,7 @@ const actions = {
     commit("SET_TO_CART", data);
     commit("SET_RESUME", resume.toFixed(2));
   },
-  purchase({commit, state}){
+  purchase({commit}){
     commit("FINALIZE_PURCHASE")
   }
   
