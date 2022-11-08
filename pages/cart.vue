@@ -8,7 +8,7 @@
           class="flex my-2 h-28 bg-[#f2f2f2] w-full"
         >
           <div class="flex sm:w-32 mr-2">
-            <img class="w-32" :src="item.image" />
+            <img class="w-32 object-contain" :src="item.image" />
           </div>
           <div class="flex flex-col justify-evenly">
             <p class="text-lg font-bold capitalize">{{ item.name }}</p>

@@ -6,7 +6,7 @@
       class="flex flex-col w-64 h-80 bg-white shadow-xl shadow-gray-500/60 items-center m-4 p-4 rounded-xl"
     >
       <div class="h-64 flex">
-        <img class="w-80" :src="item.image" />
+        <img class="w-80 object-contain" :src="item.image" />
       </div>
 
       <div class="h-4/12 w-full flex flex-col items-center">
