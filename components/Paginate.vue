@@ -95,7 +95,8 @@ export default {
   watch: {
     $route(value) {
       this.path = value.path;
+      this.page = 0
     },
-  },
+  }
 };
 </script>
