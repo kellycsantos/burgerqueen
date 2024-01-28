@@ -2,7 +2,7 @@ import axios from 'axios'
 import EndpointFactory from 'axios-endpoints'
 
 const burgerQueenApi = axios.create({
-    baseURL: 'https://burger-queen-api-production.up.railway.app/'
+    baseURL: 'https://burguer-queen.onrender.com'
 })
 
 const Endpoint = EndpointFactory(burgerQueenApi)
